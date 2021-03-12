@@ -1,0 +1,154 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 16px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+div {
+	border: 1px solid black;
+	background: #4682B4;
+	text-align: center;
+}
+
+.clearfix {
+  	overflow: auto;
+}
+
+.container {
+	width: 1100px;
+	margin: 0px auto;
+}
+
+.header {
+	background: url(../img/theme.jpg) 50%/cover no-repeat;
+}
+
+.header div{
+	background: none;
+}
+
+.menu {
+	height: 30px;
+	display: block;
+	margin: 0 0 30px 0;
+}
+
+.menu_item {
+	float: left;
+	display: block;
+	overflow: hidden;
+	border-left: 1px solid black;
+	padding: 10px;
+	font-size: 2em;
+}
+
+.photo {
+	margin: auto;
+	
+}
+
+.photo img{
+	height: 200px;
+	width: 200px;
+	overflow: hidden;
+	border-radius: 50%
+}
+
+.header_block{
+	margin: 20px 0 20px 0;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: 600;
+	
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 500;
+	
+}
+
+h3 {
+	font-size: 25px;
+}
+
+.main {
+	background: #4682B4; 
+	font-size: 18px;
+}
+
+.skills {
+
+}
+
+.header-container{
+	width: 100%;
+	margin: 20px 0 0 0;
+}
+
+.work-exp {
+	display: flex;
+   	flex-direction: column;
+}
+
+.work-section {
+	width: 70%;
+	margin: 20px auto;
+}
+
+.education {
+	display: flex;
+	/*flex-direction: row;*/
+}
+
+.education-section {
+	width: 45%;
+	margin: 0 auto;
+}
+
+.footer {
+	
+	
+}
+
+.contact_logo {
+	display: inline-block;
+	width: 40px;
+	margin: 10px;
+}
