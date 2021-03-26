@@ -48,7 +48,7 @@ div {
 }
 
 a:hover{
-	color: blue;
+	color: #007a79;
 }
 
 h1 {
@@ -68,9 +68,14 @@ h3 {
 }
 
 .container {
-	width: 1100px;
+	max-width: 1100px;
 	margin: 0px auto;
-	/*@media toDo*/
+}
+
+@media (max-width: 767px) {
+	.container{
+		max-width: none; 
+	}
 }
 
 /* header*/
@@ -120,19 +125,15 @@ h3 {
 
 /* main content*/ 
 
-/*.content_row {
-	display:flex;
-	flex-wrap:wrap;
-}*/
-
 .content_row, .education_row, .certificates_row{
 	display: flex;
 	flex-wrap:wrap;
-	justify-content:space-around;
+	justify-content:space-evenly;
 }
 
 .content_header{
 	flex: 0 1 100%;
+	padding: 20px; 
 }
 
 .stack_tech{
@@ -140,22 +141,29 @@ h3 {
 	width: 100%;
 }
 
+.stack_tech img {
+	width: 100px;
+	margin: 5px auto;
+}
+
 .content_item {
 	background-color: #007a79;
 	border-radius: 10px;
 	margin: 10px 0;
+	padding: 10px;
 }
 
 .content_item:hover{
-	box-shadow: 5px 5px 5px 5px #002a29;
+
+	box-shadow: 2px 2px 10px 5px #002a29;
 }
 
 .work_period{
-	flex: 0 1 28%;
+	flex: 0 1 20%;
 }
 
 .work_item{
-	flex: 0 1 68%;
+	flex: 0 1 70%;
 }
 
 .education_row {
@@ -165,10 +173,6 @@ h3 {
 .education_section{
 	width: 70%;
 }
-
-/*.certificates_row{
-	flex-direction: row; 
-}*/
 
 .sertificate_section{
 	width: 30%;
