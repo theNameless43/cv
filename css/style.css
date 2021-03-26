@@ -40,10 +40,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 div {
 	border: 1px solid black;
-	background: #4682B4;
+	background: #c7cedf;
 	text-align: center;
-	font-family: 'Indie Flower';
+	/*font-family: 'Indie Flower';*/
 	font-weight: 600;
+	color: #002a29;
 }
 
 a:hover{
@@ -71,6 +72,8 @@ h3 {
 	margin: 0px auto;
 	/*@media toDo*/
 }
+
+/* header*/
 
 .header {
 	background: url(../img/theme.jpg) 50%/cover no-repeat;
@@ -112,50 +115,75 @@ h3 {
 	margin: 20px 0 20px 0;
 }
 
-.main {
-	background: #4682B4; 
-	font-size: 18px;
+/*==============================================*/
+
+
+/* main content*/ 
+
+/*.content_row {
+	display:flex;
+	flex-wrap:wrap;
+}*/
+
+.content_row, .education_row, .certificates_row{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
 }
 
-.skills {
-
+.content_header{
+	flex: 0 1 100%;
 }
 
-.header-container{
+.stack_tech{
+	text-align: center;
 	width: 100%;
-	margin: 20px 0 0 0;
 }
 
-.work-exp {
-	display: flex;
-   	justify-content: center;
+.content_item {
+	background-color: #007a79;
+	border-radius: 10px;
+	margin: 10px 0;
 }
 
-.date_section{
-	width: 25%;
+.content_item:hover{
+	box-shadow: 5px 5px 5px 5px #002a29;
 }
 
-.work-section {
+.work_period{
+	flex: 0 1 28%;
+}
+
+.work_item{
+	flex: 0 1 68%;
+}
+
+.education_row {
+
+}
+
+.education_section{
 	width: 70%;
-
 }
 
-.education {
-	display: flex;
-	/*flex-direction: row;*/
-}
+/*.certificates_row{
+	flex-direction: row; 
+}*/
 
-.education-section {
-	width: 45%;
-	margin: 0 auto;
-}
+.sertificate_section{
+	width: 30%;
+}	
+/* =============================================*/
+
+
+/* footer */ 
 
 .footer {
-	
+	background-color: #007a79;
 	
 }
 
-.contact_logo {
+.contact_logo{
 	display: inline-block;
 	width: 40px;
 	margin: 10px;
